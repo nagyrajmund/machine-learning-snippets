@@ -69,13 +69,13 @@ def visualize_results(x, var, ax):
     ax.set_xlabel("x", fontsize=12, labelpad=12)
     ax.set_ylabel("iterations", fontsize=12, labelpad=12)
     ax.set_zlabel("p(x)", fontsize=12, labelpad=12)
-    ax.legend(loc='top left')
+    ax.legend(loc='upper left')
 
 if __name__ == "__main__":    
     N = 5000 # Number of iterations
 
     fig = plt.figure()
-    fig.suptitle("{} iterations of the Metropolis-Hastings"
+    fig.suptitle("{} iterations of the Metropolis-Hastings "
                  "algorithm for different $\sigma$ values".format(N), fontsize=24)
 
     var = 0.01 # Variance of the proposal distribution
