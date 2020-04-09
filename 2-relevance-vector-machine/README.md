@@ -10,3 +10,7 @@ The RVM addresses three shortcomings of the SVM:
 2. Since it's a fully probabilistc model, it aims to estimate the complete posterior of the data instead of only providing a point estimate like the SVM
 3. Lastly, unlike the SVM, RVMs can use kernels that don't satisfy Mercer's condition.
 
+A comparison between the two models from the paper:
+![](https://raw.githubusercontent.com/nagyrajmund/machine-learning-snippets/master/2-relevance-vector-machine/reference-results.png)
+
+This demonstration implements the RVM for regression and evaluates its performance on the Boston Housing dataset. With a well-chosen kernel radius, we actually manage to achieve a lower error and fewer relevance vectors than above!
